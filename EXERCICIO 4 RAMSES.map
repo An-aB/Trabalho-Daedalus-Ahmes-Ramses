@@ -1,0 +1,11 @@
+Símbolo         Valor Decimal   Valor Hexadecimal
+-------         -------------   -----------------
+VAVA                      128                  80
+VAVB                      129                  81
+VAVC                      130                  82
+MAIOR                     131                  83
+INICIO                      0                   0
+VAV3                       12                   C
+ATUALIZA_B                 21                  15
+ATUALIZA_C                 27                  1B
+FINAL                      31                  1F
