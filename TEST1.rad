@@ -1,0 +1,38 @@
+org 0 
+valor1: DB 2
+valor2: DB 4
+valor3: DB 6
+valor4: DB 10
+valor5: DB 7
+valor6: DB 3
+zero: DB 0
+
+INICIO:
+	LDR A valor1
+	LDR B valor2
+	LDR X valor3
+
+ZERAA:
+	LDR A zero
+
+ZERAB:
+	LDR B zero
+
+ZERAX:
+	LDR X zero
+
+TESTE:	
+	LDR A valor4
+	LDR B valor5
+	LDR X valor6
+
+ZERATDS:
+	LDR A zero
+ 	LDR B zero
+	LDR B zero
+
+
+
+
+
+

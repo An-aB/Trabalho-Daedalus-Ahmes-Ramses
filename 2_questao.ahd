@@ -1,0 +1,51 @@
+org 128
+
+; 8 bits
+n1:	DB	150	;Variavel de 8 bits
+n2:	DB	150	;Variavel de 8 bits
+SOMA8:	DB	0
+over8:	DB	0
+
+; 16 bits
+n3:	DW	35000	;Variavel de 16 bits
+n4:	DW	350	;Variavel de 16 bits
+
+SOMA16:	DB	0
+over16:	DB	0
+
+
+FFH:	DB	255	;255 para overflw
+ZERO:	DB	0      ;0 para nao overflw
+
+;Logica
+org 0
+
+COMECO:
+	LDA	n1
+	ADD	n2
+	STA	SOMA8
+	JNC	naoOVER8	;Se houve over, então continua
+	LDA	FFH
+	STA	over8
+	JMP	MEIO
+	
+naoOVER8:
+	LDA	ZERO
+	STA	over8
+
+MEIO:
+	LDA	n3
+	ADD	n4
+	STA	SOMA16
+	JNC	naoOVER16
+	LDA	FFH
+	STA	over16
+	JMP	FINAL
+
+naoOVER16:
+	LDA	ZERO
+	STA	over16
+
+FINAL:	HLT
+
+

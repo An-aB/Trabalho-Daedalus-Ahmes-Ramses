@@ -1,0 +1,14 @@
+var1: DB 4
+var2: DB 2
+res: DB 0
+dec: DB 1
+LDR A res
+ADD A var1
+STR A res
+LDR A var2
+SUB A dec
+STR A var2
+LDR A var2
+JZ 13
+JMP 4
+HLT 

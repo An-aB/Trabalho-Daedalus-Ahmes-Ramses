@@ -1,0 +1,17 @@
+Símbolo         Valor Decimal   Valor Hexadecimal
+-------         -------------   -----------------
+N1                        128                  80
+N2                        129                  81
+SOMA8                     130                  82
+OVER8                     131                  83
+N3                        132                  84
+N4                        134                  86
+SOMA16                    136                  88
+OVER16                    137                  89
+FFH                       138                  8A
+ZERO                      139                  8B
+COMECO                      0                   0
+NAOOVER8                   14                   E
+MEIO                       18                  12
+NAOOVER16                  32                  20
+FINAL                      36                  24

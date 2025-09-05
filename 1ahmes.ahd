@@ -1,0 +1,26 @@
+org 128
+
+NUM1:	DB 5
+NUM2:	DB 2
+RES:	DB 0
+ZERO: 	DB 0
+
+
+org 0 
+INICIO:
+	LDA NUM1
+	ADD NUM2
+	STA RES
+
+	
+LZERO:	LDA ZERO
+	STA NUM1
+	STA NUM2
+	STA RES
+
+	JMP INICIO
+	
+
+	HLT
+
+	
