@@ -1,0 +1,19 @@
+
+VALA: DB 5
+
+VALB: DB 4
+
+
+LDA  VALA
+
+
+ZERAA:
+	LDA  VALA 
+	SUB  VALA
+
+
+LDA VALB
+	
+	LDA  VALB 
+	SUB  VALB
+	HLT

@@ -1,0 +1,13 @@
+
+VALA: DB 5
+
+
+LDA  VALA
+
+
+ZERAA:
+	LDA  VALA 
+	SUB  VALA
+
+
+	HLT
